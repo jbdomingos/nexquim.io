@@ -1,93 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NexQuim - Soluções em Química para sua Empresa</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexQuim - Soluções em Química para sua Empresa</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <header class="sticky-header">
-    <div class="container header-flex">
-      <div class="logo">
-        <img src="images/Logo2.jpg" alt="Logo NexQuim" class="logo-icon" />
-        <span class="logo-text">NexQuim</span>
-      </div>
-      <nav class="main-nav">
-        <a href="#inicio" class="nav-link">Início</a>
-        <a href="#servicos" class="nav-link">Serviços</a>
-        <a href="#equipe" class="nav-link">Nossa Equipe</a>
-        <a href="#sobre" class="nav-link">Sobre Nós</a>
-        <a href="#contato" class="nav-link">Contato</a>
-      </nav>
-      <a href="https://wa.me/+554837213620" target="_blank" class="btn btn-primary">Solicitar Orçamento</a>
+    <div class="flex min-h-screen flex-col">
+        <header class="sticky-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/fake-image.jpg" alt="Logo NexQuim" class="logo-icon">
+                    <span class="logo-text">NexQuim</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                    <a href="#equipe" class="nav-link">Nossa Equipe</a>
+                    <a href="#sobre" class="nav-link">Sobre Nós</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+                <a href="https://wa.me/+554837213620" target="_blank" class="btn btn-primary">Solicitar Orçamento</a>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <section id="inicio" class="hero-section">
+                <div class="gradient-overlay"></div>
+                <canvas id="banner-animation"></canvas>
+                <div class="hero-content container">
+                    <div class="hero-text">
+                        <h1>Soluções em<br>Química para sua<br>Empresa</h1>
+                        <p>Consultoria especializada e análises químicas de alta<br>precisão para diversos setores industriais.</p>
+                        <div class="hero-buttons">
+                            <a href="#servicos" class="btn btn-white">Nossos Serviços</a>
+                            <a href="https://wa.me/+554837213620" target="_blank" class="btn btn-outline-white">Fale Conosco</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="servicos" class="services-section">
+                <canvas id="molecule-animation" class="background-animation"></canvas>
+                <div class="section-content">
+                    <div class="container">
+                        <div class="section-header">
+                            <div class="icon-container">
+                                <i data-lucide="flask-round" class="icon-azul-medio"></i>
+                            </div>
+                            <h2>Nossos Serviços</h2>
+                            <p>Oferecemos uma ampla gama de serviços químicos para atender às necessidades específicas da sua empresa.</p>
+                        </div>
+
+                        <div class="services-grid">
+                            <!-- Classificação Fiscal -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i data-lucide="file-text" class="icon-azul-medio"></i>
+                                </div>
+                                <h3>Classificação Fiscal</h3>
+                                <p>Identificação técnica e tributária de mercadorias (NCM/SH).</p>
+                                <a href="https://wa.me/+554837213620" target="_blank" class="link-azul-medio">
+                                    Saiba mais
+                                    <i data-lucide="chevron-right" class="icon-small"></i>
+                                </a>
+                            </div>
+
+                            <!-- Tributação por NCM -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i data-lucide="scale" class="icon-azul-medio"></i>
+                                </div>
+                                <h3>Tributação por NCM</h3>
+                                <p>Consultas especializadas para definição de carga tributária.</p>
+                                <a href="https://wa.me/+554837213620" target="_blank" class="link-azul-medio">
+                                    Saiba mais
+                                    <i data-lucide="chevron-right" class="icon-small"></i>
+                                </a>
+                            </div>
+
+                            <!-- FDS e FEM -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i data-lucide="file-check" class="icon-azul-medio"></i>
+                                </div>
+                                <h3>FDS e FEM</h3>
+                                <p>Elaboração de fichas de dados de segurança conforme normas técnicas.</p>
+                                <a href="https://wa.me/+554837213620" target="_blank" class="link-azul-medio">
+                                    Saiba mais
+                                    <i data-lucide="chevron-right" class="icon-small"></i>
+                                </a>
+                            </div>
+
+                            <!-- Ensaios Químicos -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i data-lucide="microscope" class="icon-azul-medio"></i>
+                                </div>
+                                <h3>Ensaios Químicos</h3>
+                                <p>Análises laboratoriais e emissão de laudos técnicos personalizados.</p>
+                                <a href="https://wa.me/+554837213620" target="_blank" class="link-azul-medio">
+                                    Saiba mais
+                                    <i data-lucide="chevron-right" class="icon-small"></i>
+                                </a>
+                            </div>
+
+                            <!-- Consultoria Regulatória -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i data-lucide="shield-check" class="icon-azul-medio"></i>
+                                </div>
+                                <h3>Consultoria Regulatória</h3>
+                                <p>Apoio técnico para conformidade ANVISA, MAPA, IBAMA e INMETRO.</p>
+                                <a href="https://wa.me/+554837213620" target="_blank" class="link-azul-medio">
+                                    Saiba mais
+                                    <i data-lucide="chevron-right" class="icon-small"></i>
+                                </a>
+                            </div>
+
+                            <!-- Pareceres Técnicos -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i data-lucide="file-spreadsheet" class="icon-azul-medio"></i>
+                                </div>
+                                <h3>Pareceres Técnicos</h3>
+                                <p>Relatórios e pareceres para suporte jurídico e processos administrativos.</p>
+                                <a href="https://wa.me/+554837213620" target="_blank" class="link-azul-medio">
+                                    Saiba mais
+                                    <i data-lucide="chevron-right" class="icon-small"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="equipe" class="team-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="icon-container">
+                            <i data-lucide="graduation-cap" class="icon-azul-medio"></i>
+                        </div>
+                        <h2>Nossa Equipe</h2>
+                        <p>Conheça os profissionais altamente qualificados que estão por trás da NexQuim.</p>
+                    </div>
+
+                    <div class="team-grid">
+                        <!-- Dr. Josiel B. Domingos -->
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <img src="images/fake-image.jpg" alt="Dr. Josiel B. Domingos">
+                            </div>
+                            <h3>Dr. Josiel B. Domingos</h3>
+                            <p class="member-title">Docente do Departamento de Química - UFSC</p>
+                            <p class="member-description">
+                                Atua com pesquisa aplicada nas áreas de catálise, biologia química e desenvolvimento de soluções químicas para desafios industriais e regulatórios.
+                            </p>
+                            <ul class="member-qualifications">
+                                <li><i data-lucide="graduation-cap"></i> Doutorado em Química - UFSC</li>
+                                <li><i data-lucide="award"></i> Pesquisador em Catálise e Biologia Química</li>
+                                <li><i data-lucide="briefcase"></i> Especialista em Soluções Químicas Industriais</li>
+                            </ul>
+                        </div>
+
+                        <!-- Msc. Cézar A. de Aguiar Arpini -->
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <img src="images/fake-image.jpg" alt="Msc. Cézar A. de Aguiar Arpini">
+                            </div>
+                            <h3>Msc. Cézar A. de Aguiar Arpini</h3>
+                            <p class="member-title">Doutorando em Química - UFSC</p>
+                            <p class="member-description">
+                                Especialista em caracterização de compostos e análise técnico-regulatória de produtos químicos, com atuação voltada à interface entre pesquisa científica e demanda do setor produtivo.
+                            </p>
+                            <ul class="member-qualifications">
+                                <li><i data-lucide="graduation-cap"></i> Mestrado em Química - UFSC</li>
+                                <li><i data-lucide="microscope"></i> Especialista em Caracterização de Compostos</li>
+                                <li><i data-lucide="file-check"></i> Análise Técnico-Regulatória de Produtos Químicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre" class="about-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="icon-container">
+                            <img src="images/fake-image.jpg" alt="Logo NexQuim" class="logo-icon">
+                        </div>
+                        <h2>Sobre Nós</h2>
+                    </div>
+
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>A NexQuim nasceu da visão de profissionais apaixonados por ciência e inovação. Nossa missão é fornecer soluções químicas inovadoras e de alta qualidade para empresas de diversos segmentos, com foco em análises técnicas e conformidade regulatória.</p>
+                            <p>Combinamos expertise acadêmica e experiência prática para oferecer serviços que atendem às necessidades específicas de cada cliente, sempre com foco na excelência e na satisfação.</p>
+                            
+                            <div class="about-features">
+                                <div class="feature">
+                                    <i data-lucide="flask-round" class="icon-azul-medio"></i>
+                                    <h3>Excelência Técnica</h3>
+                                    <p>Profissionais com formação acadêmica e experiência prática.</p>
+                                </div>
+                                <div class="feature">
+                                    <i data-lucide="microscope" class="icon-azul-medio"></i>
+                                    <h3>Soluções Personalizadas</h3>
+                                    <p>Atendimento às necessidades específicas de cada cliente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-approach">
+                            <div class="icon-container">
+                                <i data-lucide="lightbulb" class="icon-azul-medio"></i>
+                            </div>
+                            <h3>Nossa Abordagem</h3>
+                            <p>Integramos conhecimento científico e demandas do mercado para oferecer soluções eficientes e inovadoras que atendem às necessidades regulatórias e técnicas das empresas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="contact-section">
+                <div class="container">
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-header">
+                                <i data-lucide="mail" class="icon-azul-claro"></i>
+                                <h2>Entre em Contato</h2>
+                            </div>
+                            <p>Estamos prontos para ajudar sua empresa com soluções químicas personalizadas. Entre em contato para discutir suas necessidades específicas.</p>
+                            
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i data-lucide="phone" class="icon-azul-medio"></i>
+                                    <span>(48) 3721-3620</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i data-lucide="mail" class="icon-azul-medio"></i>
+                                    <span>contato@nexquim.com.br</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i data-lucide="map-pin" class="icon-azul-medio"></i>
+                                    <span>Florianópolis, SC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="contact-form">
+                            <h3>Envie uma mensagem</h3>
+                            <div class="form-group">
+                                <textarea placeholder="Sua mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/fake-image.jpg" alt="Logo NexQuim" class="logo-icon">
+                    </div>
+                   
+                    <div class="footer-copyright">
+                        © 2025 NexQuim. Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero -->
-    <section id="inicio" class="hero-section">
-      <div class="hero-content container">
-        <h1>Soluções em<br>Química para sua<br>Empresa</h1>
-        <p>Consultoria especializada e análises químicas de alta precisão para diversos setores industriais.</p>
-        <div class="hero-buttons">
-          <a href="#servicos" class="btn btn-white">Nossos Serviços</a>
-          <a href="https://wa.me/+554837213620" target="_blank" class="btn btn-outline-white">Fale Conosco</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Serviços -->
-    <section id="servicos" class="section container">
-      <h2>Nossos Serviços</h2>
-      <ul>
-        <li><strong>Classificação Fiscal:</strong> Identificação técnica e tributária de mercadorias (NCM/SH).</li>
-        <li><strong>Tributação por NCM:</strong> Consultas especializadas para definição de carga tributária.</li>
-        <li><strong>FDS e FEM:</strong> Elaboração de fichas de dados de segurança conforme normas técnicas.</li>
-        <li><strong>Ensaios Químicos:</strong> Análises laboratoriais e emissão de laudos técnicos personalizados.</li>
-        <li><strong>Consultoria Regulatória:</strong> Apoio técnico para conformidade ANVISA, MAPA, IBAMA e INMETRO.</li>
-        <li><strong>Pareceres Técnicos:</strong> Relatórios e pareceres para suporte jurídico e administrativo.</li>
-      </ul>
-    </section>
-
-    <!-- Equipe -->
-    <section id="equipe" class="section container">
-      <h2>Nossa Equipe</h2>
-      <div class="team-member">
-        <h3>Dr. Josiel B. Domingos</h3>
-        <p>Docente do Departamento de Química - UFSC. Atua com pesquisa aplicada em catálise, biologia química e soluções regulatórias para a indústria química.</p>
-      </div>
-      <div class="team-member">
-        <h3>Msc. Cézar A. de Aguiar Arpini</h3>
-        <p>Doutorando em Química - UFSC. Especialista em caracterização de compostos e análise técnico-regulatória de produtos químicos.</p>
-      </div>
-    </section>
-
-    <!-- Sobre Nós -->
-    <section id="sobre" class="section container">
-      <h2>Sobre Nós</h2>
-      <p>A NexQuim nasceu da visão de profissionais apaixonados por ciência e inovação. Nossa missão é fornecer soluções químicas inovadoras e de alta qualidade com foco técnico e regulatório.</p>
-      <p>Combinamos expertise acadêmica e experiência prática para atender com excelência cada cliente.</p>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="section container">
-      <h2>Contato</h2>
-      <p><strong>Telefone:</strong> (48) 3721-3620</p>
-      <p><strong>Email:</strong> contato@nexquim.com.br</p>
-      <p><strong>Endereço:</strong> Florianópolis, SC</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <span>&copy; 2025 NexQuim. Todos os direitos reservados.</span>
-    </div>
-  </footer>
-
-  <script>
-    lucide.createIcons();
-  </script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+    </script>
 </body>
-</html>
+</html> 
