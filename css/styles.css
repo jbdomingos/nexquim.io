@@ -33,17 +33,17 @@
     backdrop-filter: blur(8px);
 }
 
-.sticky-header .container {
-    display: flex;
-    height: 4rem;
-    align-items: center;
-    justify-content: space-between;
+sticky-header .container {
+    max-width: 100%; /* permite uso completo da largura */
+    padding: 0 2rem;  /* adiciona mais respiro lateral */
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    min-width: 600px; /* impede o encolhimento */
+    flex-shrink: 0;
 }
 
 .logo-icon {
