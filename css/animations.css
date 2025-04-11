@@ -1,0 +1,234 @@
+/* Animações de Fade */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animações de Scale */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animações de Slide */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Classes de Animação */
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.animate-fadeInDown {
+    animation: fadeInDown 0.5s ease forwards;
+}
+
+.animate-scaleIn {
+    animation: scaleIn 0.5s ease forwards;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 0.5s ease forwards;
+}
+
+/* Delays */
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+.delay-400 {
+    animation-delay: 400ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
+}
+
+/* Animações específicas de elementos */
+.hero-text h1 {
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+.hero-text p {
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.hero-buttons {
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+
+.service-card {
+    animation: scaleIn 0.5s ease backwards;
+}
+
+.team-member {
+    animation: fadeInUp 0.8s ease backwards;
+}
+
+.about-features .feature {
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.contact-form {
+    animation: slideInRight 0.8s ease forwards;
+}
+
+.contact-info {
+    animation: slideInLeft 0.8s ease forwards;
+}
+
+/* Animações de hover */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0D6EFD;
+    transition: width 250ms ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.service-card {
+    transition: transform 250ms ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    transition: transform 150ms ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Animações de Loading */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #E5E7EB;
+    border-radius: 50%;
+    border-top-color: #0D6EFD;
+    animation: spin 1s linear infinite;
+}
+
+/* Animações de Pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s ease infinite;
+}
+
+/* Animações de Shake */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+.shake {
+    animation: shake 0.8s ease;
+} 
